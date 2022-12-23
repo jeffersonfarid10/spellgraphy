@@ -74,7 +74,7 @@ class CategoryWordController extends Controller
             $categoryword = Category::create([
                 'name' => $request->name,
                 'slug' => $request->slug,
-                'image' => Storage::put('/reglasnivelunocategories', $request->file('image')),
+                'image' => Storage::put('reglasnivelunocategories', $request->file('image')),
                 'description' => $request->description,
                 'body' => $request->body,
                 'example' => $request->example,

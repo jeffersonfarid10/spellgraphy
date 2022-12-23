@@ -27,7 +27,8 @@
                 <li class="list-group-item">
                     <strong>Imagen:</strong>
                     <br>
-                    <img id="image" name="image" src="/storage/{{$categoryword->image}}" alt="" height="400px" width="700px">
+                    {{--<img id="image" name="image" src="/storage/{{$categoryword->image}}" alt="" height="400px" width="700px">--}}
+                    <img id="image" name="image" src="{{ asset("storage/$categoryword->image")}}" alt="" height="400px" width="700px"/>
                 </li>
             @endisset
 
